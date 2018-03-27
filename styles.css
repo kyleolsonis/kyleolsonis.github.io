@@ -1,0 +1,100 @@
+
+@font-face {
+   font-family: FATPIXEL;
+   src: url(FATPIXEL.TTF);
+}
+body {
+    text-align: center;
+    background-image: url(background-image.jpg);
+    background-size: 10%;
+
+}
+
+h1 {
+    font-family: FATPIXEL;
+    font-size: 100px;
+    margin: 0.2em;
+    color: red;
+
+}
+
+.title {
+      border: 5px red; <!-- TODO: No border working?? -->
+}
+
+h2 {
+    margin: 1em 0 0.25em;
+    /*font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;*/
+    font-family: FATPIXEL;
+	  font-size: 24px;
+	  font-style: normal;
+	  font-variant: normal;
+	  font-weight: 500;
+	  line-height: 26.4px;
+    color: navy;
+}
+
+h2:first-of-type {
+    margin-top: 0.5em;
+}
+form {
+  font-family: FATPIXEL;
+  color: navy;
+}
+
+table,
+tbody,
+tr,
+td {
+    border: 1px solid black;
+    background-color: white;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tr {
+    height: 20px;
+}
+
+td {
+    width: 20px;
+}
+
+input[type=number] {
+    width: 6em;
+}
+
+.deleteGrid {
+  display: none;
+}
+
+#submitButton,
+.deleteGrid,
+.paintbrush,
+.eraser,
+.pointillism {
+  background-color: white;
+  color: black;
+  border: 2px solid #f44336;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+} /* Code from W3Schools CSS Buttons page */
+
+#submitButton:hover,
+.deleteGrid:hover,
+.paintbrush:hover,
+.eraser:hover,
+.pointillism:hover {
+    background-color: #f44336;
+    color: white;
+}

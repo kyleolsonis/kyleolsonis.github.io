@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="title">
+      <h1>Lab: Pixel Art Maker</h1>
+    </div>
+    <h2>Choose Grid Size</h2>
+    <form id="sizePicker">
+        Grid Height:
+        <input type="number" id="inputHeight" name="height" min="1" value="1">
+        Grid Width:
+        <input type="number" id="inputWidth" name="width" min="1" value="1">
+        <input type="submit" id="submitButton">
+    </form>
+
+    <h2>Pick A Color</h2>
+    <input type="color" id="colorPicker">
+
+    <h2> Paintbrush or Pointillism?</h2>
+    <button class="paintbrush">Paintbrush</button>
+    <button class="eraser">Eraser</button>
+    <button class="pointillism">Pointillism</button>
+
+    <h2>Design Canvas</h2>
+    <table id="pixelCanvas">
+      <tbody> <!--Attaching the new grid to tbody node -->
+      </tbody>
+    </table>
+    <div>
+      <button class="deleteGrid">Delete Grid</button>
+    </div>
+    <div class="footer">
+    	<div class="main">
+    		<h1>Inspiration Gallery</h1>
+    		<div id="gallery">
+    		<a href="_images/Henri-Matisse.jpg" rel="gallery" title="Henri Matisse"><img src="_images/Henri-Matisse.jpg" width="70" height="70" alt="Henri Matisse Painting"></a>
+    		<a href="_images/Paul-Signac-Grand-Canal-Venice.jpg" rel="gallery" title="Paul-Signac Grand Canal Venice "><img src="_images/Paul-Signac-Grand-Canal-Venice.jpg" width="70" height="70" alt="Paul Signac Grand Canal Venice painting"></a>
+    		<a href="_images/Paul-Signac-LHirondelle-Steamer-on-the-Seine.jpg" rel="gallery" title="Paul Signac LHirondelle Steamer on the Seine"><img src="_images/Paul-Signac-LHirondelle-Steamer-on-the-Seine.jpg" width="70" height="70" alt="Paul Signac LHirondelle Steamer on the Seine painting"></a>
+        <a href="_images/Vincent-van-Gogh-Undergrowth-1887-Image-via-Wikiart-org.jpg" rel="gallery" title="Vincent van Gogh Undergrowth"><img src="_images/Vincent-van-Gogh-Undergrowth-1887-Image-via-Wikiart-org.jpg" width="70" height="70" alt="Vincent van Gogh Undergrowth 1887 painting"></a>
+        <a href="_images/Damien-Hirst-One-of-his-dot-paintings-Image-via-Artinfo-com.jpg" rel="gallery" title="Damien Hirst One of his dot paintings"><img src="_images/Damien-Hirst-One-of-his-dot-paintings-Image-via-Artinfo-com.jpg" width="70" height="70" alt="Damien Hirst One of his dot paintings"></a>
+        <a href="_images/Albert-Dubois-Pillet-Little-Circus-Camp-Image-via-Google-Art-Project.jpg" rel="gallery" title="Albert Dubois Pillet Little Circus Camp"><img src="_images/Albert-Dubois-Pillet-Little-Circus-Camp-Image-via-Google-Art-Project.jpg" width="70" height="70" alt="Albert Dubois Pillet Little Circus Camp painting"></a>
+        </div>
+    	</div>
+    </div>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.slim.min.js"></script>
+    <script src="designs.js"></script>
+    <link href="jquery.fancybox-1.3.4.css" rel="stylesheet"> <!--fancybox plug-in for slideshow -->
+    <script src="jquery-1.7.2.min.js"></script> <!--fancybox plug-in for slideshow -->
+    <script src="jquery.easing.1.3.js"></script> <!--fancybox plug-in for slideshow -->
+    <script src="jquery.fancybox-1.3.4.min.js"></script> <!--fancybox plug-in for slideshow -->
+</body>
+</html>
